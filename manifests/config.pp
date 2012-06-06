@@ -2,8 +2,8 @@ class openswan::config(
  $debug_level,
  $nat_t,
  $opportunistic_encryption,
- $plutostack,
  $plutoopts,
+ $protostack,
  $virtual_private
 ) {
 
