@@ -4,7 +4,7 @@ define openswan::connection(
   $esp,
   $ike,
   $left,
-  $leftsubnet,
+  $leftsubnet = undef,
   $leftprotoport,
   $leftnexthop,
   $pfs,
