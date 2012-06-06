@@ -15,7 +15,7 @@ class openswan (
     debug_level              => $debug_level,
     nat_t                    => $nat_t,
     opportunistic_encryption => $opportunistic_encryption,
-    protostack               => $plutostack,
+    protostack               => $protostack,
     plutoopts                => $plutoopts,
     virtual_private          => $virtual_private,
   }
