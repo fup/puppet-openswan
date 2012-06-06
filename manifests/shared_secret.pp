@@ -12,7 +12,7 @@ define openswan::shared_secret (
   file { "/etc/ipsec.d/secrets/${name}.secret":
     ensure  => file,
     mode    => '0600',
-    content => "${hosts} : PSK \"${psk}\"",
+    content => "${hosts} : PSK \"${psk}\"\n",
     notify  => Class['openswan::service'],
   }
 }
