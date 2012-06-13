@@ -12,7 +12,8 @@ define openswan::connection(
   $right,
   $rightprotoport,
   $rightsubnetwithin,
-  $type
+  $type,
+  $opts = undef
 ) {
 
   File {

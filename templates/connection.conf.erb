@@ -12,3 +12,8 @@ conn <%= @name %>
   rightprotoport=<%= @rightprotoport %>
   rightsubnetwithin=<%= @rightsubnetwithin %>
   auto=<%= @auto %>
+<% if @opts -%>
+  <% @opts.each do |k,v| -%>
+  <%= k %>=<%= v %>
+  <% end -%>
+<% end -%>
