@@ -1,19 +1,20 @@
 define openswan::connection(
-  $auto,
-  $authby,
-  $esp,
-  $ike,
-  $left,
-  $leftsubnet = undef,
-  $leftprotoport,
-  $leftnexthop,
-  $pfs,
-  $rekey,
-  $right,
-  $rightprotoport,
-  $rightsubnetwithin,
-  $type,
-  $opts = undef
+  $auto              = undef,
+  $authby            = undef,
+  $esp               = undef,
+  $ike               = undef,
+  $left              = undef,
+  $leftsubnet        = undef,
+  $leftprotoport     = undef,
+  $leftnexthop       = undef,
+  $pfs               = undef,
+  $rekey             = undef,
+  $right             = undef,
+  $rightprotoport    = undef,
+  $rightsubnet       = undef,
+  $rightsubnetwithin = undef,
+  $type              = undef,
+  $opts              = undef
 ) {
 
   File {
