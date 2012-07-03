@@ -1,18 +1,46 @@
 conn <%= @name %>
-<% if @authby %>  authby=<%= @authby %><% end %>
-<% if @pfs %>  pfs=<%= @pfs %><% end %>
-<% if @rekey %>  rekey=<%= @rekey %><% end %>
-<% if @type %>  type=<%= @type %><% end %>
-<% if @esp %>  esp=<%= @esp %><% end %>
-<% if @ike %>  ike=<%= @ike %><% end %>
-<% if @left %>  left=<%= @left %><% end %>
-<% if @leftnexthop %>  leftnexthop=<%= @leftnexthop %><% end %>
-<% if @leftprotoport %>  leftprotoport=<%= @leftprotoport %><% end %>
-<% if @right %>  right=<%= @right %><% end %>
-<% if @rightprotoport %>  rightprotoport=<%= @rightprotoport %><% end %>
-<% if @rightsubnetwithin %>  rightsubnetwithin=<%= @rightsubnetwithin %><% end %>
-<% if @rightsubnet %>  rightsubnet=<%= @rightsubnet %><% end %>
-<% if @auth %>  auto=<%= @auto %><% end %>
+<% if @authby -%>
+  authby=<%= @authby %>
+<% end -%>
+<% if @pfs -%>
+  pfs=<%= @pfs %>
+<% end -%>
+<% if @rekey -%>
+  rekey=<%= @rekey %>
+<% end -%>
+<% if @type -%>
+  type=<%= @type %>
+<% end -%>
+<% if @esp -%>
+  esp=<%= @esp %>
+<% end -%>
+<% if @ike -%>
+  ike=<%= @ike %>
+<% end -%>
+<% if @left -%>
+  left=<%= @left %>
+<% end -%>
+<% if @leftnexthop -%>
+  leftnexthop=<%= @leftnexthop %>
+<% end -%>
+<% if @leftprotoport -%>
+  leftprotoport=<%= @leftprotoport %>
+<% end -%>
+<% if @right -%>
+  right=<%= @right %>
+<% end -%>
+<% if @rightprotoport -%>
+  rightprotoport=<%= @rightprotoport %>
+<% end -%>
+<% if @rightsubnetwithin -%>
+  rightsubnetwithin=<%= @rightsubnetwithin %>
+<% end -%>
+<% if @rightsubnet -%>
+  rightsubnet=<%= @rightsubnet %>
+<% end -%>
+<% if @auth -%>
+  auto=<%= @auto %>
+<% end -%>
 <% if @opts -%>
 <% @opts.each do |k,v| -%>
   <%= k %>=<%= v %>
