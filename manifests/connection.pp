@@ -13,7 +13,7 @@ define openswan::connection(
   $rightprotoport,
   $rightsubnetwithin,
   $type,
-  $opts = undef,
+  $opts = undef
 ) {
 
   File {
