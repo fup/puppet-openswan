@@ -17,8 +17,14 @@ conn <%= @name %>
 <% if @ike -%>
   ike=<%= @ike %>
 <% end -%>
+<% if @forceencaps -%>
+  forceencaps=<%= @forceencaps %>
+<% end -%>
 <% if @left -%>
   left=<%= @left %>
+<% end -%>
+<% if @leftid -%>
+  leftid=<%= @leftid %>
 <% end -%>
 <% if @leftnexthop -%>
   leftnexthop=<%= @leftnexthop %>
@@ -26,8 +32,17 @@ conn <%= @name %>
 <% if @leftprotoport -%>
   leftprotoport=<%= @leftprotoport %>
 <% end -%>
+<% if @leftsubnet -%>
+  leftsubnet =<%= @leftsubnet %>
+<% end -%>
+<% if @leftsourceip -%>
+  leftsourceip=<%= @leftsourceip %>
+<% end -%>
 <% if @right -%>
   right=<%= @right %>
+<% end -%>
+<% if @rightid -%>
+  rightid=<%= @rightid %>
 <% end -%>
 <% if @rightprotoport -%>
   rightprotoport=<%= @rightprotoport %>
