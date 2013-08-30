@@ -11,6 +11,8 @@ config setup
 <% if @plutoopts -%>
         plutoopts="<%= @plutoopts %>"
 <% end -%>
+        dumpdir="<%= @dumpdir %>"
+        plutostderrlog="<%= @plutostderrlog %>"
         nat_traversal=<%= @nat_t %>
         virtual_private=<%= @virtual_private %>
         oe=<%= @opportunistic_encryption %>

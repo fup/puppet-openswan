@@ -2,7 +2,9 @@ class openswan::config(
  $debug_level = undef,
  $nat_t,
  $opportunistic_encryption,
+ $dumpdir,
  $plutoopts = undef,
+ $plutostderrlog,
  $protostack,
  $virtual_private
 ) {
