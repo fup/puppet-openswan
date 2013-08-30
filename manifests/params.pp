@@ -6,7 +6,7 @@ class openswan::params {
 
   # Extra parameters for Pluto
   $plutoopts = undef
-  $plutostderrlog = '/var/run/pluto.log'
+  $plutostderrlog = '/var/log/pluto.log'
   $dumpdir = '/var/run/pluto'
 
   # Exclude networks used on server side by adding %v4:!a.b.c.0/24
