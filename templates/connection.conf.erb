@@ -20,11 +20,17 @@ conn <%= @name %>
 <% if @left -%>
   left=<%= @left %>
 <% end -%>
+<% if @leftsubnet -%>
+  leftsubnet=<%= @leftsubnet %>
+<% end -%>
 <% if @leftnexthop -%>
   leftnexthop=<%= @leftnexthop %>
 <% end -%>
 <% if @leftprotoport -%>
   leftprotoport=<%= @leftprotoport %>
+<% end -%>
+<% if @leftid -%>
+  leftid=<%= @leftid %>
 <% end -%>
 <% if @right -%>
   right=<%= @right %>
