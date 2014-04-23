@@ -7,6 +7,7 @@ define openswan::connection(
   $leftsubnet        = undef,
   $leftprotoport     = undef,
   $leftnexthop       = undef,
+  $leftid            = undef,
   $pfs               = undef,
   $rekey             = undef,
   $right             = undef,
